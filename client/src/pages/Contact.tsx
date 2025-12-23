@@ -9,13 +9,13 @@ const officers = [
 ];
 
 const directors = [
-  { name: "Patty Mueller", phone: "414-899-4677" },
   { name: "Mischelle Peterson", phone: "414-531-4376" },
   { name: "Jim Hazzard", phone: "414-507-5501" },
-  { name: "Pat Bolger", phone: "262-313-8797" },
   { name: "Rick Schefelker", phone: "262-659-9061" },
   { name: "Lisa Schwabenlander", phone: "262-347-6969" },
   { name: "Rick Zimbric", phone: "414-801-8728" },
+  { name: "Tiffany Davis", phone: "262-226-9073" },
+  { name: "Kristin Meissner", phone: "262-412-2557" },
 ];
 
 export default function Contact() {
@@ -44,12 +44,13 @@ export default function Contact() {
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-blue-900 mb-2">{officer.role}</h3>
                   <h4 className="text-2xl font-display font-bold text-teal-600 mb-4">{officer.name}</h4>
-                  <div className="flex items-center gap-3 text-gray-700 group-hover:text-blue-600 transition-colors">
-                    <Phone className="h-5 w-5 flex-shrink-0" />
-                    <a href={`tel:${officer.phone.replace(/[^\d]/g, "")}`} className="hover:underline">
-                      {officer.phone}
-                    </a>
-                  </div>
+                  <a
+                    href={`tel:${officer.phone.replace(/[^\d]/g, "")}`}
+                    className="inline-flex items-center justify-center p-2 text-gray-700 hover:text-blue-600 transition-colors rounded-full hover:bg-blue-100"
+                    title={officer.phone}
+                  >
+                    <Phone className="h-6 w-6" />
+                  </a>
                 </div>
               </Card>
             ))}
@@ -64,15 +65,16 @@ export default function Contact() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {directors.map((director) => (
-              <Card key={director.name} className="border-l-4 border-l-teal-500 hover-lift">
+              <Card key={director.name} className="border-l-4 border-l-teal-500 hover-lift group">
                 <div className="p-6">
                   <h4 className="text-xl font-display font-bold text-blue-900 mb-3">{director.name}</h4>
-                  <div className="flex items-center gap-3 text-gray-700 hover:text-teal-600 transition-colors">
-                    <Phone className="h-5 w-5 flex-shrink-0" />
-                    <a href={`tel:${director.phone.replace(/[^\d]/g, "")}`} className="hover:underline">
-                      {director.phone}
-                    </a>
-                  </div>
+                  <a
+                    href={`tel:${director.phone.replace(/[^\d]/g, "")}`}
+                    className="inline-flex items-center justify-center p-2 text-gray-700 hover:text-teal-600 transition-colors rounded-full hover:bg-teal-100"
+                    title={director.phone}
+                  >
+                    <Phone className="h-6 w-6" />
+                  </a>
                 </div>
               </Card>
             ))}
