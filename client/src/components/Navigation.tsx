@@ -9,6 +9,7 @@ const links = [
   { href: "/events", label: "Events & Photos" },
   { href: "/boating", label: "Boating Info" },
   { href: "/community", label: "Community" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Navigation() {

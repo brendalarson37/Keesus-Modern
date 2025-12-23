@@ -12,6 +12,7 @@ import Membership from "@/pages/Membership";
 import Events from "@/pages/Events";
 import Boating from "@/pages/Boating";
 import Community from "@/pages/Community";
+import Contact from "@/pages/Contact";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/events" component={Events} />
       <Route path="/boating" component={Boating} />
       <Route path="/community" component={Community} />
+      <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
   );

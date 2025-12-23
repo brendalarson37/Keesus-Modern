@@ -10,7 +10,7 @@
 
   /* Lake Inspired Palette */
   /* Deep Blue - Primary */
-  --primary: 215 50% 23%;
+  --primary: 215 80% 45%;
   --primary-foreground: 210 40% 98%;
 
   /* Soft Sand/Off-white - Background */
@@ -22,8 +22,8 @@
   --card-foreground: 215 25% 15%;
   --card-border: 214 32% 91%;
 
-  /* Nature Green - Secondary */
-  --secondary: 156 42% 45%;
+  /* Teal/Turquoise - Secondary (vibrant) */
+  --secondary: 168 78% 45%;
   --secondary-foreground: 0 0% 100%;
 
   /* Muted tones for UI elements */
@@ -31,12 +31,16 @@
   --muted-foreground: 215 16% 47%;
   --border: 214 32% 91%;
   
+  /* Accent - Coral/Warm Orange */
+  --accent: 25 95% 53%;
+  --accent-foreground: 0 0% 100%;
+  
   /* Alert/Destructive */
   --destructive: 0 84% 60%;
   --destructive-foreground: 210 40% 98%;
 
   /* UI Focus Ring */
-  --ring: 215 50% 23%;
+  --ring: 215 80% 45%;
   --radius: 0.75rem;
 }
 
