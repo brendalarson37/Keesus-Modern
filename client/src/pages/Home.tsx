@@ -4,6 +4,7 @@ import { ArrowRight, Waves, Home as HomeIcon, Map } from "lucide-react";
 import { Link } from "wouter";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card, CardContent } from "@/components/ui/card";
+import lakeImageUrl from "@assets/20200605_210537_1766514676561.jpg";
 
 export default function Home() {
   const { data: newsItems, isLoading: newsLoading } = useNews();
@@ -18,11 +19,11 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        {/* Unsplash image of a beautiful lake */}
+        {/* Lake Keesus sunset photo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1557456170-0cf4f4d0d362?q=80&w=2070&auto=format&fit=crop"
-            alt="Lake Keesus scenic view"
+            src={lakeImageUrl}
+            alt="Lake Keesus scenic sunset view"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-primary/90" />
