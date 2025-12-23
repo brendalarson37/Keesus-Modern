@@ -3,6 +3,7 @@ import { Anchor, Info, AlertTriangle, Map as MapIcon, Fish } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import lakeMapUrl from "@assets/WAUKESHA_LAKEKEESUS_5648_1766515369591.png";
 
 export default function Boating() {
   const rules = [
@@ -85,11 +86,12 @@ export default function Boating() {
                 Lake Keesus is made up of 5 bays and is ~42 feet deep. Explore the topography.
               </p>
               
-              <div className="relative aspect-video bg-muted rounded-xl overflow-hidden mb-6 border border-border">
-                 {/* Map placeholder */}
-                <div className="absolute inset-0 flex items-center justify-center bg-blue-50/50">
-                  <span className="text-muted-foreground font-medium">Map Preview</span>
-                </div>
+              <div className="relative bg-muted rounded-xl overflow-hidden mb-6 border border-border">
+                <img 
+                  src={lakeMapUrl} 
+                  alt="Lake Keesus map showing 5 bays"
+                  className="w-full h-auto object-contain"
+                />
               </div>
               
               <a href="https://apps.dnr.wi.gov/doclink/lakes_maps/0852400a.pdf" target="_blank" rel="noopener noreferrer">
