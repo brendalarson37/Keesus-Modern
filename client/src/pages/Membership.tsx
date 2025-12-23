@@ -16,13 +16,13 @@ export default function Membership() {
       price: 30,
       icon: Heart,
       description: "Senior family membership",
-      popular: true,
     },
     {
       name: "Family Membership",
       price: 50,
       icon: Users,
       description: "For the whole household",
+      popular: true,
     },
   ];
 
