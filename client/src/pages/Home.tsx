@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
-import { useNews } from "@/hooks/use-content";
-import { ArrowRight, Waves, Home as HomeIcon, Map } from "lucide-react";
+import { Waves, Home as HomeIcon, Map } from "lucide-react";
 import { Link } from "wouter";
 import { SectionHeader } from "@/components/SectionHeader";
-import { Card, CardContent } from "@/components/ui/card";
 import lakeImageUrl from "@assets/20200605_210537_1766514676561.jpg";
+import overviewImageUrl from "@assets/keesus_overview_1766516080502.png";
 
 export default function Home() {
-  const { data: newsItems, isLoading: newsLoading } = useNews();
 
   const facts = [
     { icon: Waves, value: "5.3", label: "Miles of Shoreline" },
@@ -116,39 +114,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Latest News */}
-      <section className="py-20 bg-muted/30">
+      {/* Lake Overview */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader title="Latest News" subtitle="Updates from the community" centered />
+          <SectionHeader title="Lake Overview" subtitle="Topographic map of Lake Keesus" centered />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Fallback content if API returns empty */}
-            {(!newsItems || newsItems.length === 0) && (
-              <Card className="hover:shadow-lg transition-shadow border-none shadow-md">
-                <CardContent className="p-6">
-                  <span className="text-sm font-medium text-secondary mb-2 block">Community Update</span>
-                  <h3 className="text-xl font-bold text-primary mb-3">Email Updates</h3>
-                  <p className="text-muted-foreground mb-4">
-                    See the email updates for the latest news and highlights from our social events. All LKAA members receive the emails.
-                  </p>
-                  <a href="mailto:belterkl32@gmail.com" className="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
-                    Contact for access <ArrowRight className="w-4 h-4" />
-                  </a>
-                </CardContent>
-              </Card>
-            )}
-
-            {newsItems?.map((item) => (
-              <Card key={item.id} className="hover:shadow-lg transition-shadow border-none shadow-md">
-                <CardContent className="p-6">
-                  <span className="text-sm font-medium text-secondary mb-2 block">
-                    {new Date(item.createdAt!).toLocaleDateString()}
-                  </span>
-                  <h3 className="text-xl font-bold text-primary mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground line-clamp-3">{item.content}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <img 
+              src={overviewImageUrl}
+              alt="Lake Keesus topographic overview map"
+              className="w-full h-auto rounded-2xl shadow-lg border border-border"
+            />
           </div>
         </div>
       </section>
