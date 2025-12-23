@@ -6,7 +6,6 @@ import lakeImageUrl from "@assets/20200605_210537_1766514676561.jpg";
 import overviewImageUrl from "@assets/keesus_overview_1766516080502.png";
 
 export default function Home() {
-
   const facts = [
     { icon: Waves, value: "5.3", label: "Miles of Shoreline" },
     { icon: HomeIcon, value: "220", label: "Lake Houses" },

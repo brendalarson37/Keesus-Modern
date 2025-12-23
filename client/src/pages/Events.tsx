@@ -1,11 +1,9 @@
 import { SectionHeader } from "@/components/SectionHeader";
-import { Calendar, MapPin, ExternalLink, Image as ImageIcon, Phone } from "lucide-react";
-import { useEvents } from "@/hooks/use-content";
+import { MapPin, ExternalLink, Image as ImageIcon, Phone } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Events() {
-  const { data: apiEvents } = useEvents();
 
   // Upcoming events with placeholders
   const upcomingEvents = [
@@ -47,8 +45,8 @@ export default function Events() {
     { title: "90th Anniversary", date: "June 2021", link: "https://www.amazon.com/photos/shared/MxgB6yufQhSnOfYvJnZ0Jg.UouKPVHjc8IWeE366hZiGE" },
   ];
 
-  // Merge API events if they exist (assuming API returns same structure)
-  const displayEvents = apiEvents && apiEvents.length > 0 ? apiEvents : staticEvents;
+  // Use static events data
+  const displayEvents = staticEvents;
 
   return (
     <div className="pt-24 pb-20 min-h-screen bg-background">
