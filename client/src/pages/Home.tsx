@@ -11,7 +11,7 @@ export default function Home() {
 
   const facts = [
     { icon: Waves, value: "5.3", label: "Miles of Shoreline" },
-    { icon: HomeIcon, value: "216", label: "Lake Houses" },
+    { icon: HomeIcon, value: "220", label: "Lake Houses" },
     { icon: Map, value: "5", label: "Distinct Bays" },
   ];
 
@@ -119,9 +119,9 @@ export default function Home() {
       {/* Latest News */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader title="Latest News" subtitle="Updates from the community" />
+          <SectionHeader title="Latest News" subtitle="Updates from the community" centered />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Fallback content if API returns empty */}
             {(!newsItems || newsItems.length === 0) && (
               <Card className="hover:shadow-lg transition-shadow border-none shadow-md">
