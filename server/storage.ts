@@ -1,38 +1,9 @@
-import { db } from "./db";
-import {
-  events,
-  news,
-  type Event,
-  type InsertEvent,
-  type NewsItem,
-  type InsertNewsItem
-} from "@shared/schema";
-
 export interface IStorage {
-  getEvents(): Promise<Event[]>;
-  createEvent(event: InsertEvent): Promise<Event>;
-  getNews(): Promise<NewsItem[]>;
-  createNews(newsItem: InsertNewsItem): Promise<NewsItem>;
+  // Static storage interface (not used by frontend anymore)
 }
 
-export class DatabaseStorage implements IStorage {
-  async getEvents(): Promise<Event[]> {
-    return await db.select().from(events);
-  }
-
-  async createEvent(insertEvent: InsertEvent): Promise<Event> {
-    const [event] = await db.insert(events).values(insertEvent).returning();
-    return event;
-  }
-
-  async getNews(): Promise<NewsItem[]> {
-    return await db.select().from(news);
-  }
-
-  async createNews(insertNews: InsertNewsItem): Promise<NewsItem> {
-    const [newsItem] = await db.insert(news).values(insertNews).returning();
-    return newsItem;
-  }
+export class MemStorage implements IStorage {
+  // In-memory implementation if needed in future
 }
 
-export const storage = new DatabaseStorage();
+export const storage = new MemStorage();
