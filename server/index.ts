@@ -85,14 +85,13 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || "5000", 10);
+  // prefer an IPv4 loopback to avoid ENOTSUP on MSYS/Git Bash resolving to ::1
+  const envHost = process.env.HOST;
+  const host = envHost && envHost !== "localhost" ? envHost : "127.0.0.1";
   httpServer.listen(
-    {
       port,
-      host: "0.0.0.0",
-      reusePort: true,
-    },
     () => {
-      log(`serving on port ${port}`);
+      log(`serving on ${host}:${port}`);
     },
   );
 })();
