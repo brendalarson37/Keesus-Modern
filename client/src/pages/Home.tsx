@@ -41,7 +41,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-white/90 font-light mb-8 leading-relaxed drop-shadow-md"
           >
-            A beautiful 237 acre lake located in the Town of Merton, Waukesha County, WI.
+            A beautiful 235 acre lake located in the Town of Merton, Waukesha County, WI.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

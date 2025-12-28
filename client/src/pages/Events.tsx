@@ -7,8 +7,9 @@ export default function Events() {
 
   // Upcoming events with placeholders
   const upcomingEvents = [
-    { title: "Chili Dump", date: "TBD", description: "Add event details here" },
-    { title: "Spaghetti Dinner", date: "TBD", description: "Add event details here" },
+    { title: "Chili Dump", date: "Jan 24", description: "Join us from 1-4pm on the Schefelker shoreline on the north side of the channel." },
+    { title: "Spaghetti Dinner", date: "Feb 7", description: "Free Spaghetti Dinner and Bingo at Friendship Lodge at Camp Whitcomb Mason." },
+    
   ];
 
   // Ongoing events
@@ -31,18 +32,15 @@ export default function Events() {
 
   // Static data as per requirements
   const staticEvents = [
-    { title: "Road Rally", date: "October 2025", link: "https://www.amazon.com/photos/shared/U7Pb5VqfR-S2x9EXJL95Ug.TLIhBUWCoHVyUthHsV-sVL" },
-    { title: "Keesus Concert", date: "August 2025", link: "https://www.amazon.com/photos/shared/Wg3QEvR_RQ6bE-3yRHYAKQ.-h4Zfdugs9vXQr9Y3GR7VA" },
-    { title: "Pontoon Trivia", date: "July 2025", link: "https://www.amazon.com/photos/shared/M70QebdRSbWWlCm9V2U_Qw.rkCRQbW_pP1ousdajoHToT" },
-    { title: "4th of July Parade & Picnic", date: "July 2025", link: "https://www.amazon.com/photos/shared/2altiqOKTxmVPntTo01F_g.tKCBMeGwl2GilpBboiTYio" },
-    { title: "LKAA Family Picnic", date: "June 2025", link: "https://www.amazon.com/photos/shared/lQUOjfOuRd6GKdpcCkxbnA.CMYveTZVJbAslASZB0MEIU" },
-    { title: "Curling Event", date: "March 2025", link: "https://www.amazon.com/photos/shared/07h8a3iRT0ypLvgiiEaVIg.0BKZuXf0JACmIuPYTpwb8D" },
-    { title: "Chili Dump", date: "February 2025", link: "https://www.amazon.com/photos/shared/5EdzmvBeSDSiab5r2q4iBw.F0o6Rn0gnkUAuvQAFwLkC2" },
-    { title: "LKAA Holiday Party", date: "December 2024", link: "https://www.amazon.com/photos/shared/c4dli1vlT_uGfW4kbTtwtw.WwFAgB3etpp-krQ40T1rPK" },
-    { title: "Annual Meeting & Barn Party", date: "September 2023", link: "https://www.amazon.com/photos/shared/OLXYVNQfQf6HpbK1iFqmzw.SQ9y0DuTdjdmudNPceibQ7" },
-    { title: "Labor Day Brunch", date: "September 2023", link: "https://www.amazon.com/photos/shared/OzL7Dw4jRZ2swgihh6QvSQ.YvjaWi084zYf65FSS97A_O" },
-    { title: "Dockhounds Game", date: "August 2023", link: "https://www.amazon.com/photos/shared/IKNzLH5TSVGmUf6l9hn9yA.U359gAmxF5tcxE2DMAsvfp" },
-    { title: "90th Anniversary", date: "June 2021", link: "https://www.amazon.com/photos/shared/MxgB6yufQhSnOfYvJnZ0Jg.UouKPVHjc8IWeE366hZiGE" },
+    { title: "LKAA Holiday Party", date: "December 2025", link: "https://www.amazon.com/photos/shared/HBmkKaH8Rsu_iVRHIPFhJg.au-tprOs84e9yYVK6mQu1p", image: "/images/events/holiday-party.jpg" },
+    { title: "Road Rally", date: "October 2025", link: "https://www.amazon.com/photos/shared/U7Pb5VqfR-S2x9EXJL95Ug.TLIhBUWCoHVyUthHsV-sVL", image: "/images/events/road-rally.jpg" },
+    { title: "Keesus Concert", date: "August 2025", link: "https://www.amazon.com/photos/shared/Wg3QEvR_RQ6bE-3yRHYAKQ.-h4Zfdugs9vXQr9Y3GR7VA", image: "/images/events/keesus-concert.jpg" },
+    { title: "Pontoon Trivia", date: "July 2025", link: "https://www.amazon.com/photos/shared/M70QebdRSbWWlCm9V2U_Qw.rkCRQbW_pP1ousdajoHToT", image: "/images/events/pontoon-trivia.jpg" },
+    { title: "4th of July Parade & Picnic", date: "July 2025", link: "https://www.amazon.com/photos/shared/2altiqOKTxmVPntTo01F_g.tKCBMeGwl2GilpBboiTYio", image: "/images/events/4th-of-july.JPG" },
+    { title: "LKAA Family Picnic", date: "June 2025", link: "https://www.amazon.com/photos/shared/lQUOjfOuRd6GKdpcCkxbnA.CMYveTZVJbAslASZB0MEIU", image: "/images/events/family-picnic.jpg" },
+    { title: "Curling Event", date: "March 2025", link: "https://www.amazon.com/photos/shared/07h8a3iRT0ypLvgiiEaVIg.0BKZuXf0JACmIuPYTpwb8D", image: "/images/events/curling.jpg" },
+    { title: "Chili Dump", date: "February 2025", link: "https://www.amazon.com/photos/shared/5EdzmvBeSDSiab5r2q4iBw.F0o6Rn0gnkUAuvQAFwLkC2", image: "/images/events/chili-dump.jpg" },
+   
   ];
 
   // Use static events data
@@ -54,6 +52,7 @@ export default function Events() {
         <SectionHeader 
           title="Events & Gallery" 
           subtitle="Memories from our community gatherings"
+          centered
         />
 
         {/* Upcoming Events Section */}
@@ -80,7 +79,7 @@ export default function Events() {
         {/* Ongoing Events Section */}
         <div>
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-1 h-8 bg-gradient-to-b from-secondary to-accent rounded-full"></div>
+            <div className="w-1 h-8 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
             <h2 className="text-3xl font-display font-bold text-primary">Ongoing Events</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -105,7 +104,7 @@ export default function Events() {
         {/* Photos & Past Events Section */}
         <div>
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full"></div>
+            <div className="w-1 h-8 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
             <h2 className="text-3xl font-display font-bold text-primary">Photo Gallery</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -119,10 +118,10 @@ export default function Events() {
               >
                 <div className="bg-card h-full rounded-2xl border border-border overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group-hover:border-primary/30">
                   <div className="h-48 bg-muted relative overflow-hidden">
-                    {/* Unsplash placeholder for event abstract */}
+                    {/* Event image from static directory */}
                     <img 
-                      src={`https://images.unsplash.com/photo-${index % 2 === 0 ? '1533174072545-8a4e5250cfb4' : '1511795409834-ef04bbd61622'}?q=80&w=800&auto=format&fit=crop`}
-                      alt="Event placeholder" 
+                      src={(event as any).image}
+                      alt="Event image" 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                     />
                     <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors" />

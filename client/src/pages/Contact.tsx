@@ -26,6 +26,7 @@ export default function Contact() {
         <SectionHeader 
           title="Contact & Leadership" 
           subtitle="Meet the LKAA board of directors"
+          centered
         />
 
         <div className="space-y-16">
@@ -33,7 +34,7 @@ export default function Contact() {
           <div>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-1 h-8 bg-gradient-to-b from-blue-600 to-teal-500 rounded-full"></div>
-              <h2 className="text-3xl font-display font-bold text-primary">2025 Officers</h2>
+              <h2 className="text-3xl font-display font-bold text-primary">2026 Officers</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {officers.map((officer) => (
@@ -57,7 +58,7 @@ export default function Contact() {
           {/* Directors Section */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-1 h-8 bg-gradient-to-b from-secondary to-accent rounded-full"></div>
+              <div className="w-1 h-8 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
               <h2 className="text-3xl font-display font-bold text-primary">Directors</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

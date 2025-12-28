@@ -22,7 +22,7 @@ export default function Membership() {
       price: 50,
       icon: Users,
       description: "For the whole household",
-      popular: true,
+     
     },
   ];
 
@@ -30,7 +30,7 @@ export default function Membership() {
     <div className="pt-24 pb-20 min-h-screen bg-muted/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader 
-          title="Join the LKAA" 
+          title="Join LKAA" 
           subtitle="Support the preservation and community of Lake Keesus"
           centered
         />

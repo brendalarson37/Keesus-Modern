@@ -3,7 +3,7 @@ import { Anchor, Info, AlertTriangle, Map as MapIcon, Fish } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import lakeMapUrl from "@assets/WAUKESHA_LAKEKEESUS_5648_1766515369591.png";
+import lakeMapUrl from "@assets/keesus_overview_1766516080502.png";
 
 export default function Boating() {
   const rules = [
@@ -35,6 +35,7 @@ export default function Boating() {
         <SectionHeader 
           title="Boating & Lake Info" 
           subtitle="Essential information for a safe day on the water"
+          centered
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
