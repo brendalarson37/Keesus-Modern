@@ -90,7 +90,7 @@ export default function Membership() {
             Please fill out the membership form to ensure we have your current contact details for our directory and email list.
           </p>
           <a 
-            href="https://docs.google.com/forms/d/126N_HniVwA52rnZTCpNQPVyhBjpNvgbPNQ5Gv9-5d90/preview" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeYSoM6U0Raz3yDYIAXWltQLqdltRVJJyTuNvxBa3RJfuS-Zw/viewform?" 
             target="_blank" 
             rel="noopener noreferrer"
           >
