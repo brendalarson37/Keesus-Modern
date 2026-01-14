@@ -7,8 +7,8 @@ export default function Events() {
 
   // Upcoming events with placeholders
   const upcomingEvents = [
-    { title: "Chili Dump", date: "Jan 24", description: "Join us from 1-4pm on the Schefelker shoreline on the north side of the channel." },
-    { title: "Spaghetti Dinner", date: "Feb 7", description: "Free Spaghetti Dinner and Bingo at Friendship Lodge at Camp Whitcomb Mason." },
+    { title: "Chili Dump", date: "Jan 24", description: "Join us from 1-4pm on the Schefelker shoreline on the north side of the channel. Please bring a quart of chili to dump. Beer, soda, and hot chocolate provided by LKAA."},  
+    { title: "Spaghetti Dinner", date: "Feb 7", description: "Free Spaghetti Dinner and Bingo at Friendship Lodge at Camp Whitcomb Mason.  Social Hour 5-6pm, Spaghetti Dinner with salad and breadsticks 6-7pm, and Bingo 7-8pm.  Please sign up online if you plan to eat:", link: "https://bit.ly/LKAADinnerBingo2026" },
     
   ];
 
@@ -69,7 +69,23 @@ export default function Events() {
                     {event.date}
                   </Badge>
                   <h3 className="text-2xl font-display font-bold text-primary mb-3">{event.title}</h3>
-                  <p className="text-muted-foreground">{event.description}</p>
+                  <p className="text-muted-foreground">
+                    {event.description}
+                    {(event as any).link && (
+                      <>
+                        {" "}
+                        <a 
+                          href={(event as any).link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-secondary hover:text-secondary/80 hover:underline font-medium inline-flex items-center gap-1"
+                        >
+                          bit.ly/LKAADinnerBingo2026
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </>
+                    )}
+                  </p>
                 </CardContent>
               </Card>
             ))}
