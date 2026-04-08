@@ -7,7 +7,6 @@ export default function Events() {
 
   // Upcoming events with placeholders
   const upcomingEvents = [
-    { title: "Axe Throwing", date: "March 21", description: "LKAA will sponsor an axe throwing event at Falls Axe and Escape in Menomonee Falls from 5:00-6:15.  We will then head over to DJ's Goalpost for pizza and drinks. The first 30 people to sign up are guaranteed to do the axe throwing, but everyone is invited to come and watch and then join us afterwards at DJ’s Goalpost Sports Bar (N81W15094 Appleton Ave). LKAA will pay for the axe throwing and pizzas.  Attendees are expected to buy their own beverages. Please sign up online if you want to throw axes:", link: "https://docs.google.com/forms/d/e/1FAIpQLSdNI_ajMJPI3p7N9QH169QDck9xtXGXHosP1Sl79KgmVz0qtg/viewform", linkLabel: "Axe Throwing Sign-Up"}, 
     { title: "LKAA Fish Fry", date: "April 17", description: "LKAA offers its annual Friday Fish Fry Get-Together on Friday, April 17th. The dinner will happen at Ciao Haus Pub (formerly The Rustic Inn, also formerly Private Party) in Mapleton with a Social Hour (5:30pm to approx. 6:30pm) in the bar area (beer and soda provided by LKAA). On your own dining will start at approximately. 6:30. Ciao Haus has agreed to reserve their side room for our group.  Seating there is for up to 35 - 40 people. Attendees will be responsible for the cost of their food and beverages during dinner.  "},   
     
   ];
@@ -32,6 +31,7 @@ export default function Events() {
 
   // Static data as per requirements
   const staticEvents = [
+    { title: "Axe Throwing & Pizza Party", date: "March 2026", link: "https://www.amazon.com/photos/shared/Db63B0ZlSaqt-gobDC12Bg.3Rd49yHjCIq_h_aqKga1xb", image: "/images/events/axe.jpg" },
     { title: "Chili Dump", date: "February 2026", link: "https://www.amazon.com/photos/shared/la--yAeEREGBwzlqGTqOcQ.KkTkhVLTn_KZDsFCjaCSEQ", image: "/images/events/chili-dump.jpg" },
     { title: "Spaghetti and Bingo Night", date: "February 2026", link: "https://www.amazon.com/photos/shared/kchx90XWTCmx1UBZcr6YqA.Tf1wZ0-wHWk9lUollzqU7Z", image: "/images/events/bingo.jpg" },
     { title: "LKAA Holiday Party", date: "December 2025", link: "https://www.amazon.com/photos/shared/HBmkKaH8Rsu_iVRHIPFhJg.au-tprOs84e9yYVK6mQu1p", image: "/images/events/holiday-party.jpg" },
