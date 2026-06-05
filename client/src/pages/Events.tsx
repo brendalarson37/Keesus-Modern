@@ -7,7 +7,11 @@ export default function Events() {
 
   // Upcoming events with placeholders
   const upcomingEvents = [
-    { title: "LKAA Fish Fry", date: "April 17", description: "LKAA offers its annual Friday Fish Fry Get-Together on Friday, April 17th. The dinner will happen at Ciao Haus Pub (formerly The Rustic Inn, also formerly Private Party) in Mapleton with a Social Hour (5:30pm to approx. 6:30pm) in the bar area (beer and soda provided by LKAA). On your own dining will start at approximately. 6:30. Ciao Haus has agreed to reserve their side room for our group.  Seating there is for up to 35 - 40 people. Attendees will be responsible for the cost of their food and beverages during dinner.  "},   
+    { title: "LKAA 4th of July Parade & Picnic", date: "July 4", description: "Join us at 10:30am for our very own Lake Keesus 4th of July Parade.  It will start at Brett & Tricia Engelkings driveway on Park Drive and end at Steve & Ann Belters at the end of Flynn Rd.  Stay for the picnic with hot dogs, chips and beverages sponsored by LKAA."},   
+    { title: "LKAA Rib Smoke-Off", date: "July 18", description: "Do you make a great rack of ribs? Are you ready to compete in the first annual Lake Keesus Rib Smoke Off competition? Hope you will join us on Saturday July 18 at Schreibel’s home. Please sign up if you plan to compete or if you would like to join the After The Smoke party. LKAA will be sponsoring the event and providing cold beverages and prizes for the winners.", links: [ { href: "https://drive.google.com/file/d/1UObT_2cKkisphfOeZnTizM-Y3iTnZ299/view", label: "Official Rules and Event details" }, { href: "https://docs.google.com/forms/d/e/1FAIpQLSeGcw454jTMu6rAM6EeWsklkyLEekODNekzOMeVrv15WbQ0Ng/viewform", label: "Rib Smoke-Off Sign Up" } ] },   
+    { title: "Keesus Koncert", date: "July 25", description: "The first LKAA Keesus Koncert of the summer will happen along the shore of Rick & Kitty Schefelker on the North shore of the channel on Saturday, July 25th from 7 p.m. to 11 p.m. The band is called Controlled Burn and features two Keesus residents - John Roche and Georgia Schefelker. Keesans can anchor their boats, tie up to piers, or watch from the Shefelker shore off Audrey Drive. A Porta-Potty will be provided on shore."},   
+    { title: "Pontoon Trivia", date: "August 29", description: "Join us for a fun day of Pontoon Trivia! Save the date for Saturday, August 29th from 2-5p.m. Details coming soon!"},   
+    { title: "LKAA Annual Meeting & Barn Party", date: "October 10", description: "Join us for dinner, our annual meeting, and live music at a barn party! Save the date for Saturday, October 10th from 6-10p.m. Details coming soon!"},   
     
   ];
 
@@ -73,21 +77,24 @@ export default function Events() {
                   <h3 className="text-2xl font-display font-bold text-primary mb-3">{event.title}</h3>
                   <p className="text-muted-foreground">
                     {event.description}
-                    {(event as any).link && (
-                      <>
-                        {" "}
-                        <a 
-                          href={(event as any).link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-secondary hover:text-secondary/80 hover:underline font-medium inline-flex items-center gap-1"
-                        >
-                          {(event as any).linkLabel || (event as any).link}
-                          <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </>
-                    )}
                   </p>
+                  {((event as any).links ?? ((event as any).link ? [{ href: (event as any).link, label: (event as any).linkLabel || (event as any).link }] : [])).length > 0 && (
+                    <div className="text-muted-foreground mt-4 space-y-3">
+                      {((event as any).links ?? ((event as any).link ? [{ href: (event as any).link, label: (event as any).linkLabel || (event as any).link }] : [])).map((link: any, linkIndex: number) => (
+                        <div key={linkIndex}>
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-secondary hover:text-secondary/80 hover:underline font-medium inline-flex items-center gap-1"
+                          >
+                            {link.label}
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
