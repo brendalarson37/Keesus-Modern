@@ -7,9 +7,6 @@ export default function Events() {
 
   // Upcoming events with placeholders
   const upcomingEvents = [
-    { title: "LKAA 4th of July Parade & Picnic", date: "July 4", description: "Join us at 10:30am for our very own Lake Keesus 4th of July Parade.  It will start at Brett & Tricia Engelkings driveway on Park Drive and end at Steve & Ann Belters at the end of Flynn Rd.  Stay for the picnic with hot dogs, chips and beverages sponsored by LKAA."},   
-    { title: "LKAA Rib Smoke-Off", date: "July 18", description: "Do you make a great rack of ribs? Are you ready to compete in the first annual Lake Keesus Rib Smoke Off competition? Hope you will join us on Saturday July 18 at Schreibel’s home. Please sign up if you plan to compete or if you would like to join the After The Smoke party. LKAA will be sponsoring the event and providing cold beverages and prizes for the winners.", links: [ { href: "https://drive.google.com/file/d/1UObT_2cKkisphfOeZnTizM-Y3iTnZ299/view", label: "Official Rules and Event details" }, { href: "https://docs.google.com/forms/d/e/1FAIpQLSeGcw454jTMu6rAM6EeWsklkyLEekODNekzOMeVrv15WbQ0Ng/viewform", label: "Rib Smoke-Off Sign Up" } ] },   
-    { title: "Keesus Koncert", date: "July 25", description: "The first LKAA Keesus Koncert of the summer will happen along the shore of Rick & Kitty Schefelker on the North shore of the channel on Saturday, July 25th from 7 p.m. to 11 p.m. The band is called Controlled Burn and features two Keesus residents - John Roche and Georgia Schefelker. Keesans can anchor their boats, tie up to piers, or watch from the Shefelker shore off Audrey Drive. A Porta-Potty will be provided on shore."},   
     { title: "Pontoon Trivia", date: "August 29", description: "Join us for a fun day of Pontoon Trivia! Save the date for Saturday, August 29th from 2-5p.m. Details coming soon!"},   
     { title: "LKAA Annual Meeting & Barn Party", date: "October 10", description: "Join us for dinner, our annual meeting, and live music at a barn party! Save the date for Saturday, October 10th from 6-10p.m. Details coming soon!"},   
     
@@ -35,17 +32,16 @@ export default function Events() {
 
   // Static data as per requirements
   const staticEvents = [
+    { title: "Keesus Koncert", date: "July 2026", link: "https://www.amazon.com/photos/shared/MNmSuIXDTh2ZF60-kMS6Ig.4jybJCkbDkIsS6_vztYvHd", image: "/images/events/keesus-koncert.jpg"},
+    { title: "Rib Smoke-Off", date: "July 2026", link: "https://www.amazon.com/photos/shared/fL0hwfVUSAm-fEoifgxT6Q.QgPFRIYAV3lIoBkTPJzEZt", image: "/images/events/smoke-off.jpg" },
+    { title: "4th of July Parade & Picnic", date: "July 2026", link: "https://www.amazon.com/photos/shared/TlqMucoASoGteuxF3WAM4A.vJva8_yNyDN2vQR2d8OyhP", image: "/images/events/4th-of-july.JPG" },
     { title: "Axe Throwing & Pizza Party", date: "March 2026", link: "https://www.amazon.com/photos/shared/Db63B0ZlSaqt-gobDC12Bg.3Rd49yHjCIq_h_aqKga1xb", image: "/images/events/axe.jpg" },
     { title: "Chili Dump", date: "February 2026", link: "https://www.amazon.com/photos/shared/la--yAeEREGBwzlqGTqOcQ.KkTkhVLTn_KZDsFCjaCSEQ", image: "/images/events/chili-dump.jpg" },
     { title: "Spaghetti and Bingo Night", date: "February 2026", link: "https://www.amazon.com/photos/shared/kchx90XWTCmx1UBZcr6YqA.Tf1wZ0-wHWk9lUollzqU7Z", image: "/images/events/bingo.jpg" },
     { title: "LKAA Holiday Party", date: "December 2025", link: "https://www.amazon.com/photos/shared/HBmkKaH8Rsu_iVRHIPFhJg.au-tprOs84e9yYVK6mQu1p", image: "/images/events/holiday-party.jpg" },
     { title: "Road Rally", date: "October 2025", link: "https://www.amazon.com/photos/shared/U7Pb5VqfR-S2x9EXJL95Ug.TLIhBUWCoHVyUthHsV-sVL", image: "/images/events/road-rally.jpg" },
-    { title: "Keesus Concert", date: "August 2025", link: "https://www.amazon.com/photos/shared/Wg3QEvR_RQ6bE-3yRHYAKQ.-h4Zfdugs9vXQr9Y3GR7VA", image: "/images/events/keesus-concert.jpg" },
     { title: "Pontoon Trivia", date: "July 2025", link: "https://www.amazon.com/photos/shared/M70QebdRSbWWlCm9V2U_Qw.rkCRQbW_pP1ousdajoHToT", image: "/images/events/pontoon-trivia.jpg" },
-    { title: "4th of July Parade & Picnic", date: "July 2025", link: "https://www.amazon.com/photos/shared/2altiqOKTxmVPntTo01F_g.tKCBMeGwl2GilpBboiTYio", image: "/images/events/4th-of-july.JPG" },
-    { title: "LKAA Family Picnic", date: "June 2025", link: "https://www.amazon.com/photos/shared/lQUOjfOuRd6GKdpcCkxbnA.CMYveTZVJbAslASZB0MEIU", image: "/images/events/family-picnic.jpg" },
     { title: "Curling Event", date: "March 2025", link: "https://www.amazon.com/photos/shared/07h8a3iRT0ypLvgiiEaVIg.0BKZuXf0JACmIuPYTpwb8D", image: "/images/events/curling.jpg" },
-    
    
   ];
 
