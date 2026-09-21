@@ -7,7 +7,7 @@ export default function Events() {
 
   // Upcoming events with placeholders
   const upcomingEvents = [
-    { title: "Pontoon Trivia", date: "August 29", description: "Join us for a fun day of Pontoon Trivia! Save the date for Saturday, August 29th from 2-5p.m. Details coming soon!"},   
+    { title: "Road Rally", date: "September 27", description: "Join your Keesus neighbors for a bit of automotive trivia and Road Rally challenge. Participants will begin at St. Augustine School (Monches Road & Plat Road) at 12 p.m. sharp. Teams will be started at 5 minute intervals, but time will not be a factor. Which ever team has the most correct answers and is closest to the correct mileage will win. Prizes will be awarded for top finishers. We will end at a place to eat pizza and drink beverages provided by the LKAA. Call or text Gene at 414-801-9499 so he knows how many people are participating."},   
     { title: "LKAA Annual Meeting & Barn Party", date: "October 10", description: "Join us for dinner, our annual meeting, and live music at a barn party! Save the date for Saturday, October 10th from 6-10p.m. Details coming soon!"},   
     
   ];
