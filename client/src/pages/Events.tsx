@@ -7,8 +7,8 @@ export default function Events() {
 
   // Upcoming events with placeholders
   const upcomingEvents = [
-    { title: "Road Rally", date: "September 27", description: "Join your Keesus neighbors for a bit of automotive trivia and Road Rally challenge. Participants will begin at St. Augustine School (Monches Road & Plat Road) at 12 p.m. sharp. Teams will be started at 5 minute intervals, but time will not be a factor. Which ever team has the most correct answers and is closest to the correct mileage will win. Prizes will be awarded for top finishers. We will end at a place to eat pizza and drink beverages provided by the LKAA. Call or text Gene at 414-801-9499 so he knows how many people are participating."},   
-    { title: "LKAA Annual Meeting & Barn Party", date: "October 10", description: "Join us for dinner, our annual meeting, and live music at a barn party! Save the date for Saturday, October 10th from 6-10p.m. Details coming soon!"},   
+    
+    { title: "LKAA Annual Meeting & Barn Party", date: "October 10", description: "Join us for dinner, our annual meeting, and live music at a barn party! 5:30 Arrival and Cocktails, 6:00 Dinner, 6:45 Annual Meeting, 7:00 Live Music by Tavern Peddlers.  Sign up today!!", links: [{ href: "https://docs.google.com/forms/d/e/1FAIpQLSd845dauDyZIYt9UWECME8Z3tVcfPLTVx12AvcN3JwPD9ro-A/viewform", label: "Barn Party Sign-Up Form" }] },
     
   ];
 
@@ -32,6 +32,7 @@ export default function Events() {
 
   // Static data as per requirements
   const staticEvents = [
+    { title: "Road Rally", date: "October 2026", link: "https://www.amazon.com/photos/shared/8aaSbAICQmGKflKOD0yS2w.MGCGHXs6IHpk7zMkpMBYqG", image: "/images/events/road-rally.jpg"},
     { title: "Keesus Koncert", date: "July 2026", link: "https://www.amazon.com/photos/shared/MNmSuIXDTh2ZF60-kMS6Ig.4jybJCkbDkIsS6_vztYvHd", image: "/images/events/keesus-koncert.jpg"},
     { title: "Rib Smoke-Off", date: "July 2026", link: "https://www.amazon.com/photos/shared/fL0hwfVUSAm-fEoifgxT6Q.QgPFRIYAV3lIoBkTPJzEZt", image: "/images/events/smoke-off.jpg" },
     { title: "4th of July Parade & Picnic", date: "July 2026", link: "https://www.amazon.com/photos/shared/TlqMucoASoGteuxF3WAM4A.vJva8_yNyDN2vQR2d8OyhP", image: "/images/events/4th-of-july.JPG" },
@@ -39,7 +40,6 @@ export default function Events() {
     { title: "Chili Dump", date: "February 2026", link: "https://www.amazon.com/photos/shared/la--yAeEREGBwzlqGTqOcQ.KkTkhVLTn_KZDsFCjaCSEQ", image: "/images/events/chili-dump.jpg" },
     { title: "Spaghetti and Bingo Night", date: "February 2026", link: "https://www.amazon.com/photos/shared/kchx90XWTCmx1UBZcr6YqA.Tf1wZ0-wHWk9lUollzqU7Z", image: "/images/events/bingo.jpg" },
     { title: "LKAA Holiday Party", date: "December 2025", link: "https://www.amazon.com/photos/shared/HBmkKaH8Rsu_iVRHIPFhJg.au-tprOs84e9yYVK6mQu1p", image: "/images/events/holiday-party.jpg" },
-    { title: "Road Rally", date: "October 2025", link: "https://www.amazon.com/photos/shared/U7Pb5VqfR-S2x9EXJL95Ug.TLIhBUWCoHVyUthHsV-sVL", image: "/images/events/road-rally.jpg" },
     { title: "Pontoon Trivia", date: "July 2025", link: "https://www.amazon.com/photos/shared/M70QebdRSbWWlCm9V2U_Qw.rkCRQbW_pP1ousdajoHToT", image: "/images/events/pontoon-trivia.jpg" },
     { title: "Curling Event", date: "March 2025", link: "https://www.amazon.com/photos/shared/07h8a3iRT0ypLvgiiEaVIg.0BKZuXf0JACmIuPYTpwb8D", image: "/images/events/curling.jpg" },
    
