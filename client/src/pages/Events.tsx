@@ -8,10 +8,8 @@ export default function Events() {
   // Upcoming events with placeholders
   const upcomingEvents = [
     
-    { title: "LKAA Annual Meeting & Barn Party", date: "October 10", description: "Join us for dinner, our annual meeting, and live music at a barn party! 5:30 Arrival and Cocktails, 6:00 Dinner, 6:45 Annual Meeting, 7:00 Live Music by Tavern Peddlers.  Sign up today!!", links: [{ href: "https://docs.google.com/forms/d/e/1FAIpQLSd845dauDyZIYt9UWECME8Z3tVcfPLTVx12AvcN3JwPD9ro-A/viewform", label: "Barn Party Sign-Up Form" }] },
-    
-  ];
-
+    { title: "LKAA Holiday Party", date: "December 12", description: "Please join us at 7pm at James Lodge.  LKAA will supply the beer, seltzers, soda, and water. Members can bring their own alcohol and mixers and favorite wine. Please bring an appetizer or dessert to share.", image: "/images/events/lkaa-holiday-party-2026.jpg"}
+  ]
   // Ongoing events
   const ongoingEvents = [
     {
@@ -67,6 +65,13 @@ export default function Events() {
             {upcomingEvents.map((event, index) => (
               <Card key={index} className="border-l-4 border-l-secondary hover-lift">
                 <CardContent className="p-6">
+                  {(event as any).image && (
+                    <img
+                      src={(event as any).image}
+                      alt={`${event.title} flyer`}
+                      className="w-full max-h-[600px] object-contain rounded-lg mb-5"
+                    />
+                  )}
                   <Badge variant="secondary" className="mb-3 bg-secondary/10 text-secondary hover:bg-secondary/20 border-none">
                     {event.date}
                   </Badge>
